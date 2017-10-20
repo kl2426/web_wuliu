@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>新闻详情 - 新闻 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header.html')
+		<!--   /header  -->
+
+		<!--   breadcrumb  -->
+		<div class="m-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-main clearfix">
+					<span>当前位置：</span>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">仓储服务</a>
+						</li>
+						<li class="active">仓库企业</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!--   /breadcrumb  -->
+		
+		<!--   新闻     -->
+		<div class="m-news">
+			<div class="container">
+				<div class="news-body">
+					<div class="news-left">
+						<ul>
+							<li><a href="#">热门新闻<i class="fa fa-long-arrow-right"></i></a></li>
+							<li class="active"><a href="#">园区新闻<i class="fa fa-long-arrow-right"></i></a></li>
+							<li><a href="#">图片新闻<i class="fa fa-long-arrow-right"></i></a></li>
+							<li><a href="#">实事新闻<i class="fa fa-long-arrow-right"></i></a></li>
+						</ul>
+					</div>
+					<div class="news-right">
+						
+						<!--  新闻详情   -->
+						<div class="m-news-info">
+							<div class="info-title">
+								<h3>新闻标题新闻标题新闻标题新闻标题</h3>
+								<p>
+									<span>2017年10月10日</span>
+									<span>阅读：522</span>
+									<span>来源：原创</span>
+									<span>关键词：<a>新闻</a><a>资讯</a></span>
+									<a id="font_size">
+										<span class="active">T小字</span>
+										<span>T大字</span>
+									</a>
+								</p>
+							</div>
+							<div class="info-body" id="info_body">
+								<!--   内容  -->
+								文章内容
+							</div>
+						</div>
+						<!--  /新闻详情   -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--   /新闻     -->
+		
+		
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$('#font_size span').on('click',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				if($(this).index() == 0){
+					$('#info_body').css('font-size',14);
+				}else{
+					$('#info_body').css('font-size',18);
+				}
+			});
+		</script>
+	</body>
+
+</html>

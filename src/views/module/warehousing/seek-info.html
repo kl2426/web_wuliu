@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>仓储求租详情 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header.html')
+		<!--   /header  -->
+
+		<!--   breadcrumb  -->
+		<div class="m-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-main clearfix">
+					<span>当前位置：</span>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">仓储服务</a>
+						</li>
+						<li class="active">仓库企业</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!--   /breadcrumb  -->
+		
+		<!--   求租详情   -->
+		<div class="m-enterprise m-seek">
+			<div class="container">
+				<div class="clearfix">
+					<div class="seek-info-body">
+						<div class="info-body-info">
+							<div class="info-img">
+								<img src="../../../img/common/p0001.png" />
+							</div>
+							<div class="info-decs">
+								<h3><span>【仓库租赁需求】</span><a>长沙市/芙蓉区变通仓库100-150平米通用仓库求租</a></h3>
+								<!--  状态1 配仓中 active1   -->
+								<!--  状态2 看仓中 active2  -->
+								<!--  状态3 已完成 active3 -->
+								<div class="info-status active1">
+									<div class="status1">配仓中</div>
+									<div class="status2">看仓中</div>
+									<div class="status3">已完成</div>
+								</div>
+								<p>面积需求：<font color="red">200m2 - 5000m2</font></p>
+								<p>联系人：张生/女士&nbsp;&nbsp;&nbsp; 13788889999</p>
+								<p>预计租期：三年以上</p>
+								<p>预计入仓：2019年12月</p>
+								<div class="info-decs-btn">
+									<a data-toggle="modal" data-target="#myModal" class="btn btn-lg btn-info">我要报价</a>
+								</div>
+							</div>
+							<div class="info-time">
+								<div class="time-bg">
+									<span>12</span>
+									<p>报价截止日期</p>
+									<a>2018年12月12日</a>
+								</div>
+							</div>
+						</div>
+						
+						<!--   详细说明    -->
+						<div class="info-body-body">
+							<div class="body-body">详细说明</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--   /求租详情   -->
+		
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		
+		<!--  求租详情-点击报价按钮    -->
+		@@include('../../common/modal/求租详情-点击报价按钮.html')
+		<!--  /求租详情-点击报价按钮    -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/module/warehousing/index.js"></script>
+	</body>
+
+</html>

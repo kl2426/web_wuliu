@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>仓储求租 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header.html')
+		<!--   /header  -->
+
+		<!--   breadcrumb  -->
+		<div class="m-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-main clearfix">
+					<span>当前位置：</span>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">仓储服务</a>
+						</li>
+						<li class="active">仓库出租</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!--   /breadcrumb  -->
+
+		<!--   筛选 与 我要出租  -->
+		<div class="m-index-screen">
+			<div class="container">
+				<div class="row">
+					<div class="left-screen col-xs-8">
+						<!--   筛选  -->
+						@@include('../../common/screen.html')
+						<!--   /筛选  -->
+					</div>
+					
+					<div class="right-rent col-xs-4">
+						<!--  我要出租  -->
+						<div class="rent-body">
+							<a class="rent-img" href="#" ><img alt="" src="../../../img/module/warehousing/rent.png" /></a>
+							<div class="rent-btn">
+								<a href="#"><img src="../../../img/module/warehousing/rent-btn.png" /></a>
+							</div>
+						</div>
+						<!--  /我要出租  -->
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		<!--   /筛选 与 我要出租  -->
+		
+		<!--  条件筛选     -->
+		<div class="m-index-conscreen">
+			<div class="container">
+				<div class="conscreen-body clearfix">
+					<!--  排序  -->
+					<div class="body-sort">
+						<span class="sort-title">排序：</span>
+						<ul id="screen_top">
+							<li>最热门</li>
+							<li class="active">综合</li>
+							<li>最新</li>
+						</ul>
+					</div>
+					<div class="body-sort">
+						<span class="sort-title" id="screen_area">面积<i class="fa fa-long-arrow-up"></i></span>
+					</div>
+					<div class="body-sort">
+						<span class="sort-title" id="screen_price">价格<i class="fa fa-long-arrow-down"></i></span>
+					</div>
+					<!--  价格区间   -->
+					<div class="body-sort">
+						<div class="sort-money">
+							<input type="number" name="money_start" placeholder="￥" />
+							<span>-</span>
+							<input type="number" name="money_end" placeholder="￥" />
+							<input type="button" class="btn btn-sm" value="确定" />
+						</div>
+					</div>
+					<div class="body-line"></div>
+					<div class="body-sort">
+						<span class="sort-title">找到相关仓库<font color="red">2995</font>个</span>
+					</div>
+					<div class="body-line"></div>
+					<!--   页数     -->
+					<div class="body-sort">
+						<div class="sort-page">
+							<a><i class="fa  fa-angle-left"></i></a>
+							<span><font color="red">1</font>/300</span>
+							<a><i class="fa  fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /条件筛选     -->
+		
+		<!--  list  -->
+		<div class="m-index-list">
+			<div class="container">
+				<div class="list-left">
+					<ul class="list-left-ul clearfix">
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="seek-info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						<li class="one">
+							<a class="one-img" href="seek-info.html" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+							<div class="one-title">
+								<h3 class="txt-cut"><a href="seek-info.html" target="_blank">仓库标题</a></h3>
+								<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div><a class="btn btn-info" href="info.html" target="_blank">查看详细</a></div>
+							</div>
+						</li>
+						
+					</ul>
+					<!--   分页      -->
+					<div class="m-pagination">
+						<ul class="pagination-ul">
+							<li class="disabled"><a>&laquo;</a></li>
+						    <li><a href="#">1</a></li>
+						    <li class="disabled"><a>2</a></li>
+						    <li class="active"><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">&raquo;</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<!--   right   -->
+				<div class="list-right">
+					<div class="right-top">
+						<div class="top-title"><span>仓储推荐</span></div>
+						<ul class="top-ul">
+							<li class="one">
+								<a class="one-img" href="#" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+								<div class="one-title">
+									<h3 class="txt-cut"><a href="#" target="_blank">仓库标题</a></h3>
+									<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div></div>
+								</div>
+							</li>
+							<li class="one">
+								<a class="one-img" href="#" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+								<div class="one-title">
+									<h3 class="txt-cut"><a href="#" target="_blank">仓库标题</a></h3>
+									<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div></div>
+								</div>
+							</li>
+							<li class="one">
+								<a class="one-img" href="#" target="_blank"><img src="../../../img/module/warehousing/rent.png" alt="" title="" /></a>
+								<div class="one-title">
+									<h3 class="txt-cut"><a href="#" target="_blank">仓库标题</a></h3>
+									<p>面积需求：<font color="red">500.00m2 - 1000.00m2</font></p>
+								<p>预计租期：<font color="red">三年以上</font></p>
+								<p>预计入仓：2019年12月</p>
+								<div class="one-btn"><div class="one-btn-left">距报价结束<span>12天</span></div></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /list  -->
+		
+		
+		<!--   服务   -->
+		<div class="m-index-server">
+			<div class="container">
+				<div class="server-body">
+					<div class="body-main">
+						<div class="one">
+							<div class="one-left">
+								<h4><a>在线仓储服务</a></h4>
+								<p>1、仓库预定：提交资料、在线上传、在线审核、发起预定。</p>
+								<p>2、仓库金融：小额贷款、订单融资、创意质押。</p>
+							</div>
+							<div class="one-right">
+								<img src="../../../img/module/warehousing/server-01.png" />
+							</div>
+						</div>
+					</div>
+					<div class="body-main">
+						<div class="one one-2">
+							<div class="one-left">
+								<h4><a>仓储加盟服务</a></h4>
+								<p>1、为何加盟：提高收益、降低空置率多种合作模式选择。</p>
+								<p>2、加盟流程：在线申请、人工审核、签署协议、成功加盟。</p>
+							</div>
+							<div class="one-right">
+								<img src="../../../img/module/warehousing/server-02.png" />
+							</div>
+						</div>
+					</div>
+					<div class="body-main">
+						<div class="one">
+							<div class="one-left">
+								<h4><a>园区管理</a></h4>
+								<p>根据需求自定义园区管理流程，节约成本，提高效率，让您更好更专注于自己的业务领域。</p>
+							</div>
+							<div class="one-right">
+								<img src="../../../img/module/warehousing/server-03.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--   /服务   -->
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/module/warehousing/index.js"></script>
+	</body>
+
+</html>

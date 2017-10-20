@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>招聘详情 - 关于我们 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header.html')
+		<!--   /header  -->
+
+		<!--   breadcrumb  -->
+		<div class="m-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-main clearfix">
+					<span>当前位置：</span>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">仓储服务</a>
+						</li>
+						<li class="active">仓库企业</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!--   /breadcrumb  -->
+		
+		<!--  招聘详情    -->
+		<div class="m-job-info">
+			<div class="container">
+				<div class="job-info">
+					<div class="info-body">
+						<div class="info-title">
+							<h3>招聘标题招聘标题招聘标题招聘标题</h3>
+							<p>发布时间：2017年10月10日</p>
+						</div>
+						<div class="info-body">
+							<div class="one"><span class="one-title">招聘职位：</span><div class="one-body">网页设计</div></div>
+							<div class="one"><span class="one-title">招聘人数：</span><div class="one-body">2人</div></div>
+							<div class="one"><span class="one-title">工作地址：</span><div class="one-body">湖南省长沙市</div></div>
+							<div class="one">
+								<span class="one-title">招聘详情：</span>
+								<div class="one-body">
+									招聘详情
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /招聘详情    -->
+		
+		
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/module/warehousing/index.js"></script>
+		
+		<script>
+			$(function(){
+				//   平滑滚动
+				var target_offset = function(){
+					if(location.hash.indexOf('#') >= 0){
+						var dom_target = $(location.hash);
+						var targetOffset = dom_target.offset().top;
+						$('html,body').animate({
+				          scrollTop: targetOffset
+				        },
+				        300);
+					}
+				}
+				//  run 
+				target_offset();
+			});
+		</script>
+	</body>
+
+</html>
