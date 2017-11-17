@@ -40,7 +40,7 @@ $(document).ready(function(){
 		//  ajax
 		var data_input = $("#index_screen .media-body input[type=text]").val();
 		var data_li = $("#index_screen .media-body li.active").text();
-		alert(data_input + data_li);
+		//alert(data_input + data_li);
 	});
 	
 	//   条件筛选
@@ -56,9 +56,41 @@ $(document).ready(function(){
 			var data_money = $('.m-index-conscreen input[name=money_start]').val() + ',' + $('.m-index-conscreen input[name=money_end]').val();
 			
 			//   ajax
-			alert(data_top + data_area + data_price + data_money);
+			//alert(data_top + data_area + data_price + data_money);
 			
 		},50);
 	});
+	
+	
+	
+	//    仓储 滚动
+	var dom_gundong = $(".gundong-ov .ov-gd");
+	dom_gundong.each(function(){
+		var that = $(this);
+		var ov_gd_height = that.height();
+		if(ov_gd_height > 100){
+			var that2 = that.clone();
+			var timer = null;
+			//
+			that.parent().append(that2);
+			//
+			var mar = function(){
+				if(that2[0].offsetTop<=that.parent()[0].scrollTop){
+					that.parent()[0].scrollTop-=that[0].offsetHeight;
+				}else{
+					that.parent()[0].scrollTop++;
+				}
+			}
+			timer = setInterval(mar,60);
+			//
+			that.parent().hover(function(){
+				clearInterval(timer);
+			},function(){
+				timer = setInterval(mar,60);
+			});
+		}
+	});
+	
+	
 	
 });

@@ -227,5 +227,12 @@ layui.config({
 		$(".maxUpload").text(nullData(data.maxUpload)); //最大上传限制
 		$(".userRights").text(nullData(data.userRights)); //当前用户权限
 	}
+	
+	
+	
+	
+	
+	
+	
 
 })

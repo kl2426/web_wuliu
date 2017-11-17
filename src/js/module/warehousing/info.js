@@ -86,4 +86,13 @@ $(document).ready(function(){
 	});
 	
 	
+	//   预约看仓弹窗 点击OK
+	$("#modal_reservation_ok").on('click',function(){
+		//   ajax提交
+		//
+		window.open('../../../../personal-center/views/module/warehousing/individual/seek_send_list.html?menuid=14');
+	});
+	
+	
+	
 });

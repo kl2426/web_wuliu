@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>新闻详情 - 新闻 - 雨花区产业园信息数据共享平台</title>
+		<title>关于我们 - 雨花区产业园信息数据共享平台</title>
 
 		<!-- Bootstrap -->
 		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,47 +44,49 @@
 		</div>
 		<!--   /breadcrumb  -->
 		
-		<!--   新闻     -->
-		<div class="m-news">
+		<!--  关于我们     -->
+		<div class="m-about">
 			<div class="container">
-				<div class="news-body">
-					<div class="news-left">
-						<ul>
-							<li><a href="#">热门新闻<i class="fa fa-long-arrow-right"></i></a></li>
-							<li class="active"><a href="#">园区新闻<i class="fa fa-long-arrow-right"></i></a></li>
-							<li><a href="#">图片新闻<i class="fa fa-long-arrow-right"></i></a></li>
-							<li><a href="#">实事新闻<i class="fa fa-long-arrow-right"></i></a></li>
-						</ul>
-					</div>
-					<div class="news-right">
-						
-						<!--  新闻详情   -->
-						<div class="m-news-info">
-							<div class="info-title">
-								<h3>新闻标题新闻标题新闻标题新闻标题</h3>
-								<p>
-									<span>2017年10月10日</span>
-									<span>阅读：522</span>
-									<span>来源：原创</span>
-									<span>关键词：<a>新闻</a><a>资讯</a></span>
-									<a id="font_size">
-										<span class="active">T小字</span>
-										<span>T大字</span>
-									</a>
-								</p>
-							</div>
-							<div class="info-body" id="info_body">
-								<!--   内容  -->
-								文章内容
-							</div>
-						</div>
-						<!--  /新闻详情   -->
-						
+				<div class="about-job" id="job">
+					<div class="m-enterprise-title"><span>人才招聘</span></div>
+					<div class="job-list">
+						<table>
+							<tr>
+								<th>招聘职位</th>
+								<th>工作地点</th>
+								<th>发布时间</th>
+								<th>招聘人数</th>
+							</tr>
+							<tr>
+								<td><a href="job_info.html" target="_blank">网页设计</a></td>
+								<td>长沙</td>
+								<td>2017-10-09</td>
+								<td>2人</td>
+							</tr>
+							<tr>
+								<td><a href="job_info.html" target="_blank">网页设计</a></td>
+								<td>长沙</td>
+								<td>2017-10-09</td>
+								<td>2人</td>
+							</tr>
+							<tr>
+								<td><a href="job_info.html" target="_blank">网页设计</a></td>
+								<td>长沙</td>
+								<td>2017-10-09</td>
+								<td>2人</td>
+							</tr>
+							<tr>
+								<td><a href="job_info.html" target="_blank">网页设计</a></td>
+								<td>长沙</td>
+								<td>2017-10-09</td>
+								<td>2人</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--   /新闻     -->
+		<!--  /关于我们     -->
 		
 		
 		
@@ -94,15 +96,24 @@
 		
 		<script src="../../../js/common/jquery.js"></script>
 		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/module/warehousing/index.js"></script>
 		<script src="../../../js/lib/kefu/kefu.js"></script>
+		
 		<script>
-			$('#font_size span').on('click',function(){
-				$(this).addClass('active').siblings().removeClass('active');
-				if($(this).index() == 0){
-					$('#info_body').css('font-size',14);
-				}else{
-					$('#info_body').css('font-size',18);
+			$(function(){
+				//   平滑滚动
+				var target_offset = function(){
+					if(location.hash.indexOf('#') >= 0){
+						var dom_target = $(location.hash);
+						var targetOffset = dom_target.offset().top;
+						$('html,body').animate({
+				          scrollTop: targetOffset
+				        },
+				        300);
+					}
 				}
+				//  run 
+				target_offset();
 			});
 		</script>
 	</body>

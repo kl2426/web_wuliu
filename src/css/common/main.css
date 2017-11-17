@@ -29,6 +29,7 @@ a:link{text-decoration: none;}
 .m-header .header-nav{background: url(../../img/common/nav-bg.png) repeat-x; height: 53px;}
 .m-header .header-nav .nav-ul{}
 .m-header .header-nav .nav-ul .one{float: left;width: 12.5%;}
+.m-header .header-nav .nav-ul .one.active .dropdown a.btn{background-color: #2088b8;height: 51px;}
 .m-header .header-nav .nav-ul .one:hover .dropdown a.btn,
 .m-header .header-nav .nav-ul .one .dropdown.open a.btn{background-color: #2088b8;}
 .m-header .header-nav .nav-ul .one .dropdown{}
@@ -189,8 +190,29 @@ a:link{text-decoration: none;}
 .rent-body .rent-btn{text-align: center;padding: 20px;}
 .rent-body .rent-btn a img{}
 
+/*  gundong  */
+.m-gundong{width: 842px;border:solid 1px #E8E8E8;}
+.m-gundong .m-enterprise-title{}
+.m-gundong .gundong{}
+.m-gundong .gundong .ov{height: 100px; overflow: hidden;}
+.m-gundong .gundong .ov .ov-gd{position: relative;}
+.m-gundong .gundong .col-xs-6{border-right: dashed 1px #e8e8e8;}
+.m-gundong .gundong .col-xs-6:last-child{border:0;}
+.m-gundong .gundong .tab{overflow: hidden;}
+.m-gundong .gundong .tab.tab-th{color: #2497cd;font-weight: bold;}
+.m-gundong .gundong .tab li{float: left;width: 20%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; line-height: 22px; padding: 5px;}
+.m-gundong .gundong .tab li a.btn{height: 22px;line-height: 22px; padding: 0 5px;border-radius: 0;font-size: 12px;}
+
+.m-gundong .gundong table{width: 100%;}
+.m-gundong .gundong table tr{}
+.m-gundong .gundong table tr td,
+.m-gundong .gundong table tr th{height: 34px; padding:0 4px;}
+.m-gundong .gundong table tr th{color: #2497cd;}
+.m-gundong .gundong table tr td{}
+.m-gundong .gundong table tr td a.btn{height: 22px;line-height: 22px; padding: 0 5px;border-radius: 0;}
+
 /*  条件筛选    */
-.m-index-conscreen{margin-top: 20px;}
+.m-index-conscreen{margin-top: 20px; margin-bottom: 20px; width: 842px;}
 .m-index-conscreen .conscreen-body{background-color: #F6F6F6; padding: 5px 20px;border: solid 1px #E8E8E8;font-size: 12px;}
 .m-index-conscreen .conscreen-body .body-sort{float: left;margin-right: 10px;}
 .m-index-conscreen .conscreen-body .body-sort .sort-title{float: left;display: block;cursor: pointer; line-height: 25px;padding: 0 5px;}
@@ -454,7 +476,7 @@ a:link{text-decoration: none;}
 .m-about .about-about .about-about-text .about-banner{float: left;margin-right: 20px; margin-bottom: 10px;}
 .m-about .about-about .about-about-text .about-banner .carousel{width: 700px; height: 400px;}
 .m-about .about-about .about-about-text .about-banner .carousel .item img{width: 100%; height: 400px;}
-.m-about .about-job{margin-top: 40px;}
+.m-about .about-job{margin-bottom: 60px;}
 .m-about .about-job .job-list{margin: 10px;}
 .m-about .about-job .job-list table{border-top: solid 2px #2498cb; width: 100%; border-left: solid 1px #E3E5E6;border-right: solid 1px #E3E5E6;}
 .m-about .about-job .job-list table tr{border-bottom: solid 1px #E3E5E6;}
@@ -462,7 +484,7 @@ a:link{text-decoration: none;}
 .m-about .about-job .job-list table tr td{height: 40px;padding: 0 10px; background-color: #F5F6FA;color: #333;}
 .m-about .about-job .job-list table tr td a{color: #333;}
 .m-about .about-job .job-list table tr:nth-child(2n) td{background-color: #fff;}
-.m-about .about-tell{ margin-top: 40px;margin-bottom: 60px;}
+.m-about .about-tell{margin-bottom: 60px;}
 .m-about .about-tell .tell-body{margin: 10px;overflow: hidden;}
 .m-about .about-tell .tell-body .body-left{float: left;}
 .m-about .about-tell .tell-body .body-left img{ width: 500px; height: 300px;}
@@ -494,8 +516,11 @@ a:link{text-decoration: none;}
 .m-news .news-left{float: left;}
 .m-news .news-left ul{}
 .m-news .news-left ul li{border-bottom: solid 1px #DCDCDC;border-top: solid 1px #f7f7f7;}
+.m-news .news-left ul li:hover,
 .m-news .news-left ul li.active{border-top: solid 1px #E3E5E6;}
+.m-news .news-left ul li:hover a,
 .m-news .news-left ul li.active a{background-color: #2497CD;color: #fff;}
+.m-news .news-left ul li:hover a i,
 .m-news .news-left ul li.active a i{color: #fff;}
 .m-news .news-left ul li a{position: relative; display: block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; width: 250px;height: 58px; line-height: 58px;padding-right: 45px; padding-left: 20px; background-color: #E3E5E6;font-size: 16px;color: #2497CD;}
 .m-news .news-left ul li a i{position: absolute;right: 12px;top: 16px;font-size: 24px; color: #999;}
@@ -524,7 +549,59 @@ a:link{text-decoration: none;}
 
 
 
+/*    物流 ===========================    */
+/*  物流企业    */
+.m-logistics{}
+.m-logistics .enterprise-left{ width: 800px;}
+.m-logistics .enterprise-right{ width: 320px;}
+.m-logistics .logistics-qy{margin: 20px;}
+.m-logistics .logistics-qy .qy-title{padding-left: 10px;line-height: 20px; border-left: solid 4px #007DDB; font-size: 16px;}
+.m-logistics .logistics-qy .qy-title a{float: right;}
+.m-logistics .logistics-qy ul{overflow: hidden;}
+.m-logistics .logistics-qy ul li{}
+.m-logistics .logistics-qy .one{float: left;width: 169px; margin: 10px;}
+.m-logistics .logistics-qy .one a{display: block;position: relative; overflow: hidden;}
+.m-logistics .logistics-qy .one a img{width:169px;height: 120px;}
+.m-logistics .logistics-qy .one a span{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; line-height: 30px; text-align: center; color: #000;}
+.m-logistics .logistics-qy .one .one-title{display: block; position: absolute;left: 0;top: 100%;width: 100%; height: 100%;background-color: rgba(0,0,0,0.4);padding: 10px;padding-top: 40px;}
+.m-logistics .logistics-qy .one .one-title p{color: #fff;}
 
+.m-logistics .enterprise-right .m-enterprise-title a{float: right; margin: 5px 10px 0 0;}
+.m-logistics .enterprise-right .m-gundong{ margin-bottom: 20px;}
+.m-logistics .enterprise-right .m-gundong ul{}
+.m-logistics .enterprise-right .m-gundong ul li{overflow: hidden;border-bottom: solid 1px #f1f1f1; line-height: 24px;}
+.m-logistics .enterprise-right .m-gundong ul li a,
+.m-logistics .enterprise-right .m-gundong ul li b,
+.m-logistics .enterprise-right .m-gundong ul li span{float: left; display: block;width: 33.33%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.m-logistics .enterprise-right .m-gundong ul li a{width: 45%;padding-left: 10px;}
+.m-logistics .enterprise-right .m-gundong ul li b{width: 30%; font-weight: normal;}
+.m-logistics .enterprise-right .m-gundong ul li span{width: 25%; padding-right: 10px;}
+.m-logistics .enterprise-right .logistics-js{margin-bottom: 10px;}
+.m-logistics .enterprise-right .logistics-js > div{overflow: hidden; margin-top: 10px;}
+.m-logistics .enterprise-right .logistics-js > div > span{display: block;float: left;width: 30%; text-align: right; line-height: 34px; padding-right: 5px;}
+.m-logistics .enterprise-right .logistics-js > div > div{float: left;width: 70%;}
+.m-logistics .enterprise-right .logistics-js > div > div input{display: inline-block; width: 150px;}
+.m-logistics .enterprise-right .logistics-js > div > div p{font-size: 12px; margin-bottom: 3px;}
+.m-logistics .enterprise-right .logistics-js > div > div p span{color: #2498cb;}
+.m-logistics .enterprise-right .logistics-js > div > div p b{color: red;}
+.m-logistics .enterprise-right .enterprise-in{margin-bottom: 20px;}
+.m-logistics .enterprise-right .enterprise-in img{width: 100%;}
+
+/*   列表   */
+.m-logistics .logistics-list{}
+.m-logistics .logistics-list ul{margin: 10px;}
+.m-logistics .logistics-list ul li{overflow: hidden;border-bottom:dashed 1px #ccc; line-height: 40px;}
+.m-logistics .logistics-list ul li span,
+.m-logistics .logistics-list ul li b,
+.m-logistics .logistics-list ul li a{display: block;float: left;width: 33.33%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.m-logistics .logistics-list ul li a{width: 60%;color: #0C6BBF;padding-left: 10px;}
+.m-logistics .logistics-list ul li a font{margin-left: 10px; font-size: 12px; color: #333;}
+.m-logistics .logistics-list ul li a:hover{color: #f50;}
+.m-logistics .logistics-list ul li b{width: 20%; color: #666;font-weight: normal;}
+.m-logistics .logistics-list ul li span{width: 20%; color: #666; text-align: right;padding-right: 10px;}
+
+
+/*    /物流 ===========================    */
 
 
 
